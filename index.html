@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="logoalura.png" alt="Logo da alura">   
+    </header>
+    <main class="apresentacao">
+        <section class="entrada__texto">
+
+            <!--CAMPO DE TEXTO-->
+            <textarea 
+                id="caixaDeTexto" 
+                name="textoParaCodificar" 
+                rows="6" 
+                cols="60" 
+                placeholder="Digite aqui seu texto">
+            </textarea>
+            
+            <div class="entrada__texto__botao"> 
+                <p>Apenas letras minúsculas e sem acento.</p>
+                <div class="entrada__texto__botao__botao">
+                    
+                    <button id="crypt-btn" class="botao__um">Criptografar</button>
+                    <button id="decrypt-btn" class="botao__dois">Descriptografar</button>
+                                   
+                </div>
+            </div>
+
+        </section>
+
+        <section class="saida__de__texto">
+            
+            <div id ="imagem__desaparece"> 
+                <img src="imagem.svg" alt="uma ilustraçao de alguém segurando uma lupa"> 
+            </div> 
+
+            <div id="textobloqueado" class="saida__de__texto__mensagem">
+                <div class="saida__de__texto__mensagem__texto">
+                    <p class="saida__de__texto__mensagem__um">Nenhuma mensagem encontrada</p>
+                    <p class="saida__de__texto__mensagem__dois">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>                
+            </div> 
+
+            <div id="areaDeTexto" class="oculto">
+                <textarea 
+                    id="textoCopiado" 
+                    cols="30" 
+                    rows="10" 
+                    class="texto__criptografado"> 
+                </textarea>
+                <button onclick="copiarTexto()" id="novoBotao" class="botao__aparece"> Copiar</button>
+            </div>
+            
+
+        </section>
+
+        
+        
+    </main>
+    <footer class="rodape"> 
+        <p class="rodape__texto"> Criado por Carlos Henrique - Challenge Alura</p> 
+    </footer>
+    <script language="javascript" src="scrip.js"></script>
+</body>
+</html>
